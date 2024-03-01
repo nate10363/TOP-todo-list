@@ -1,0 +1,325 @@
+body {
+  margin: 0;
+}
+
+header {
+  width: 100vw;
+  height: 100px;
+  background-color: #000040;
+  font-size: 30px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  padding-left: 25vw;
+  position: fixed;
+  color: white;
+  z-index: 20;
+}
+
+#navbar {
+  position: fixed;
+  height: calc(100vh - 100px);
+  width: 250px;
+  background-color: #000040;
+  border: none;
+  border-radius: 0 0 5px 0;
+  /* box-shadow: 5px 10px #888888; */
+  margin-top: 100px;
+}
+
+#filter-date-container {
+  width: 80%;
+  height: 40%;
+  background-color: gray;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.filter-date-btn, #add-project-btn {
+  width: 60%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#projects-navbar-container {
+  width: 80%;
+  /* height: min-content; */
+  margin: 10% auto;
+  background-color: gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.proj-nav-item {
+  font-size: 22px;
+  color: #5c0303;
+  cursor: pointer;
+}
+
+
+
+#add-project-btn {
+  margin: 10px auto;
+}
+
+#project-list-container {
+  width: 100%;
+}
+
+.nav-item {
+  margin: 5px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  background-color: white;
+  border: 2px solid #5c0303;
+  padding: 0 5px;
+}
+
+#proj-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
+#main-container {
+  position: absolute;
+  top: 110px;
+  left: 275px;
+  width: calc(100vw - 300px);
+}
+
+.project-item {
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.project-item-span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.new-task-btn {
+  background-color: red;
+}
+
+.single-task-div {
+  /* border-bottom: 2px solid lightgray; */
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+}
+
+.name-edit-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.task-btn-div, .task-name-div {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.task-name-div {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.task-name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.completion-button {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  /* margin: 0 auto; */
+  left: 500px;
+}
+
+.due-date {
+  margin: 0;
+  font-size: 15px;
+  text-indent: 4px;
+}
+
+.project-header {
+  text-align: center;
+  font-size: 32px;
+}
+
+.dueDate-taskInfo-div {
+  display: flex;
+}
+
+.view-task-info {
+  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.view-task-info:hover {
+  background-color: #000040;
+  color: white;
+}
+
+.viewing-task-info {
+  background-color: #000040;
+  color: white;
+  pointer-events: none;
+}
+
+.task-info-container {
+  height: 300px;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+.task-priority-para, .task-description-para, .task-dueDate-para {
+  margin: 0;
+  text-indent: 5%;
+}
+
+.task-dueDate-label-para, .task-description-label-para, .task-priority-label-para {
+  margin: 0;
+  text-decoration: underline;
+}
+
+.task-info-parent-div {
+  margin: 5%;
+}
+
+.hide-btn {
+  width: 50%;
+  height: 40px;
+  margin: 0 25%;
+  background-color: white;
+  border: 3px solid #000040;
+  color: #000040;
+}
+
+.hide-btn:hover {
+  background-color: #000040;
+  border: 3px solid #000040;
+  color: white;
+}
+
+.edit-btn {
+  border: 2px solid #000040;
+  background-color: white;
+  color: #000040;
+  border-radius: 7px;
+}
+
+.edit-btn:hover {
+  border: 2px solid #000040;
+  background-color: #000040;
+  color: white;
+  border-radius: 7px;
+}
+
+.delete-project-btn {
+  border: 2px solid #5c0303;
+  background-color: white;
+  color: #5c0303;
+  border-radius: 7px;
+}
+
+.delete-project-btn:hover {
+  border: 2px solid #5c0303;
+  background-color: #5c0303;
+  color: white;
+  border-radius: 7px;
+}
+
+.delete-task-btn {
+  border: 2px solid #5c0303;
+  background-color: white;
+  color: #5c0303;
+  border-radius: 7px;
+}
+
+.delete-task-btn:hover {
+  border: 2px solid #5c0303;
+  background-color: #5c0303;
+  color: white;
+  border-radius: 7px;
+}
+
+#date-input, #description-input, #priority-input {
+  margin: 0 0 10px 10px;
+}
+
+#clear-storage-dialog-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#close-clear-storage-btn {
+  background-color: white;
+  border: 3px solid #000040;
+  color: #000040;
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+#close-clear-storage-btn:hover {
+  background-color: #000040;
+  border: 3px solid #000040;
+  color: white;
+  border-radius: 5px;
+}
+
+#confirm-clear-storage-btn {
+  background-color: white;
+  border: 3px solid #5c0303;
+  color: #5c0303;
+}
+
+#confirm-clear-storage-btn:hover {
+  background-color: #5c0303;
+  border: 3px solid #5c0303;
+  color: white;
+  border-radius: 5px;
+}
