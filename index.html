@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Asset Management</title>
+  </head>
+  <body>
+
+    <header>
+      <span id="header-span">Todo App</span>
+    </header>
+
+    <div id="navbar">
+      <div id="projects-navbar-container">
+        <button id="add-project-btn">New Project</button>
+        <button id="clear-storage">Clear Storage</button>
+        <dialog id="clear-storage-dialog">
+          <div id="clear-storage-dialog-div">
+            <h3>Are you sure you want to delete all tasks and projects?</h3>
+            <button id="close-clear-storage-btn">No, I want to conquer my neurosis</button>
+            <button id="confirm-clear-storage-btn">Yes, ded it</button>
+
+          </div>
+        </dialog>
+        <div id="project-list-container"></div>
+      </div>
+    </div>
+
+    <div id="main-container">
+
+      <dialog id="project-dialog">
+        <label for="new-project-input">Project Name: <input type="text" id="new-project-input"></label>
+        <div>
+          <button id="close-modal-btn">Close</button>
+          <button id="create-project-btn">Create Project</button>
+        </div>
+      </dialog>
+
+      <dialog id="task-dialog">
+        <h2>Edit Task</h2>
+        <label for="date-input">Due Date: <br><input type="date" id="date-input"></label><br>
+        <label for="description-input">Description: <br><textarea type="text" id="description-input" cols="30" rows="4"></textarea></label><br>
+
+        <!-- <label for="priority-input">Priority: <input type="text" id="priority-input"></label> -->
+        <label for="priority-input">Priority: <br>
+          <select id="priority-input">
+            <option value="">Default</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </label>
+        <div>
+          <button id="close-accept-modal-btn">Close</button>
+          <button id="accept-task-edit-btn">Save Task</button>
+        </div>
+      </dialog>
+
+      <div id="items-container"></div>
+    </div>
+
+
+
+
+
+    
+
+
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
